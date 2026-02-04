@@ -1,14 +1,20 @@
 *{
     margin: 0;
+    box-sizing: border-box;
 }
 header{
-    background: #fde0e6;
+    background: #f3d5fb;
     text-align: center;
+    padding:1%;
+}
+img{
+    display:block;
+    width:400px;
+    height:505px;
+    border: 5px double #372d2d;
 }
 main{
-    /* rewrites*/
-    height: 100vh; /*viewpoint height, element takes up 100% of the screen*/
-    width:70%;
+
     text-align: center;
     font-size: calc(2px + 1.5vw);
 }
@@ -19,10 +25,11 @@ h1{
 
 }
 nav{
-    background-color: lightgray;
+    background-color: #ededed;
     padding:1px;
-    margin-left:20px;
+    margin-left:0;
     border: 3px solid black;
+
 
 }
 nav ul{
@@ -44,13 +51,7 @@ nav li{
     padding: 0.5%;
 
 }
-display{
 
-    border-right: 2px solid black;
-    margin: 5% auto;
-    width: 80%;
-    padding: 1%;
-}
 #nav-main{
     width:100%;
     display: flex;
@@ -64,14 +65,65 @@ nav a{
     font-weight : bold;
     color: black;
 
+
 }
 #page-wrapper{
     width: 80vw;
-    background-color: #ffc8cf;
-    margin: auto;
+    background-color: #f7e1ff;
+    margin: 0 auto;
 }
 p{
     font-family: "Dubai Medium";
     font-size: 20px;
+    text-align: center;
 
+}
+@media screen and (max-width:1000px){
+    #nav-main{
+        flex-direction: column;
+    }
+    nav, main{
+
+        width: 100%;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    nav li{
+        width:100%;
+        padding: 5px 0;
+        margin :0;
+        border-right: none;
+        border-bottom: 2px solid black;
+
+
+    }
+    main{
+        height: 100vh;
+    }
+}
+
+#main-content{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-left: 100px;
+    margin-top:30px;
+}
+
+#main-info{
+    list-style: none;
+
+
+}
+#main-info li{
+
+    margin-bottom:20px;
+    font-family:"Dubai Medium";
+    font-weight:bold;
+    font-size:28px;
+
+    color: #372d2d;
 }
