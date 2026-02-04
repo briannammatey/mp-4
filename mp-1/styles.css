@@ -7,16 +7,17 @@ header{
     text-align: center;
     padding:1%;
 }
-img{
+#profile{
     display:block;
-    width:400px;
-    height:505px;
+
     border: 5px double #372d2d;
+    max-width: 40%;
 }
 main{
 
     text-align: center;
     font-size: calc(2px + 1.5vw);
+
 }
 
 h1{
@@ -37,10 +38,15 @@ nav ul{
     list-style: none;
     text-align: center;
     display:flex;
-    padding: 0;
+
     margin:0;
 
 
+}
+footer {
+
+    padding: 1%;
+    text-align: center;
 }
 nav li{
 
@@ -71,6 +77,7 @@ nav a{
     width: 80vw;
     background-color: #f7e1ff;
     margin: 0 auto;
+    min-height: 100vh;
 }
 p{
     font-family: "Dubai Medium";
@@ -81,6 +88,7 @@ p{
 @media screen and (max-width:1000px){
     #nav-main{
         flex-direction: column;
+
     }
     nav, main{
 
@@ -91,6 +99,14 @@ p{
         flex-direction: column;
         justify-content: space-evenly;
     }
+    #page-wrapper{
+        min-height: 100vh;
+    }
+    #about-me h2{
+        width:100%;
+        font-size: calc(2px + 1.5vw);
+    font-family: "Segoe UI Black"
+    }
     nav li{
         width:100%;
         padding: 5px 0;
@@ -98,19 +114,36 @@ p{
         border-right: none;
         border-bottom: 2px solid black;
 
-
     }
     main{
-        height: 100vh;
+    height: auto;
+    }
+    #main-content{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-left: 0%;
+        font-size: calc(4px + 5vw);
+
+    }
+    #about-me{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        margin-left: 0%;
+        font-size: calc(4px + 5vw);
+
     }
 }
+
 
 #main-content{
     display: flex;
     align-items: center;
     gap: 25px;
-    margin-left: 100px;
-    margin-top:30px;
+    margin-left: 3%;
+    margin-top:5%;
 }
 
 #main-info{
@@ -120,10 +153,52 @@ p{
 }
 #main-info li{
 
-    margin-bottom:20px;
+    margin-bottom:5%;
     font-family:"Dubai Medium";
     font-weight:bold;
     font-size:28px;
 
     color: #372d2d;
+}
+
+
+#about-me{
+    width: 100%;
+    height:100vh;
+    text-align: center;
+
+
+
+}
+
+
+.info{
+    font-size:26px;
+    margin-top: 2%;
+}
+
+.college-education{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+}
+#ed-contents ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 5%;
+    align-content: space-between;
+    margin-left:10%;
+    font-family: "Dubai Medium";
+
+}
+
+.logo{
+    width:30%;
+    height:40%;
+    display: block;
+}
+.college-text{
+
 }
