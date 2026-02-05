@@ -199,6 +199,61 @@ p{
     height:40%;
     display: block;
 }
-.college-text{
+.section{
+    margin-top:5%;
+    font-family: "Segoe UI Black";
+    font-size:30px;
+}
 
+ .container{background-color:white;
+ margin-top:5%;
+ border-radius: 10px;
+ width: 70%;
+     height: 10%;
+     align-items: center;
+     margin-left:15%;
+     display: flex;
+     border: 3px solid black;
+     padding: 3%;
+ }
+ .container ul{
+list-style: none;
+ }
+ .container ul li{
+     font-family: "Dubai Medium";
+     font-size: 24px;
+     margin-bottom:2%;
+ }
+ .name{
+     font-family: "Dubai Medium";
+     font-size: 28px;
+ }
+
+
+
+
+.container_2{
+    background-color:white;
+    margin-top:5%;
+    border-radius: 10px;
+    width: 70%;
+    height: 10%;
+    align-items: center;
+    margin-left:15%;
+    display: flex;
+    border: 3px solid black;
+    padding: 3%;
+}
+.container_2 ul{
+    list-style: none;
+    align-content: space-between;
+    margin-left:5%;
+
+}
+.container_2 ul li{
+    font-family: "Dubai Medium";
+
+    display:flex;
+    margin-bottom: 1.5%;
+    margin-left:5%;
 }
