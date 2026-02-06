@@ -191,6 +191,7 @@ p{
     align-content: space-between;
     margin-left:10%;
     font-family: "Dubai Medium";
+    font-weight: bold;
 
 }
 
@@ -213,7 +214,7 @@ p{
      align-items: center;
      margin-left:15%;
      display: flex;
-     border: 3px solid black;
+     border: 3px solid #ff006b;
      padding: 3%;
      justify-content: space-between;
  }
@@ -239,10 +240,10 @@ list-style: none;
     border-radius: 10px;
     width: 70%;
     height: 10%;
-
+    flex-direction: row;
     margin-left:15%;
     display: flex;
-    border: 3px solid black;
+    border: 3px solid #a81af6;
     padding: 3%;
     align-items: flex-start;
 
@@ -267,7 +268,7 @@ list-style: none;
 }
 
 .container_3{
-    background-color:white;
+    background-color:#ededed;
     margin-top:5%;
     border-radius: 10px;
     width: 70%;
@@ -278,6 +279,7 @@ list-style: none;
     border: 3px solid black;
     padding: 6%;
 }
+
 .project-name{
     font-family:"Segoe UI Black";
 
@@ -305,6 +307,7 @@ list-style: none;
 .row{
     width:33%;
     padding-left:10%;
+    flex-wrap: wrap;
 
 }
 
@@ -333,6 +336,7 @@ list-style: none;
     padding:2%;
     font-size:18px;
     font-family: "Dubai Medium";
+    background-color:white;
 }
 #numbers input{
     align-content: space-between;
@@ -355,7 +359,23 @@ list-style: none;
     font-weight: bold;
 
 }
+#certification{
+
+}
 
 #achievements ul li{
+    margin-top:2%;
+}
+.cert{
+    width:40%;
+    height:50%;
+}
+#certification ul{
+    list-style: none;
+}
+#certification ul li {
+    font-family: "Dubai Medium";
+    font-size: 24px;
+    margin-bottom:2%;
     margin-top:2%;
 }
